@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+void main()
+{
+    int num1[3][4], num2[3][4] ;
+    int i, j ;
+    
+    printf("Enter the element of 3*4 array num1--\n");
+    for(i=0 ; i<3 ; i=i+1)
+    for (j=0 ; j<4; j=j+1)
+    scanf("%d\n" , &num1[i][j]);
+    
+    printf("Enter the element of 3*4 array num2--\n");
+    for(i=0 ; i<3 ; i=i+1)
+    for (j=0 ; j<4; j=j+1)
+    scanf("%d\n" , &num2[i][j]);
+// printing the two arrays    
+    printf(" the element of 3*4 array num1 are--\n");
+    for(i=0 ; i<3 ; i=i+1)
+    {
+      for (j=0 ; j<4; j=j+1)
+      printf("3d\n" , &num1[i][j]);
+      printf("\n");  
+    }
+    printf(" the element of 3*4 array num2 are--\n");
+    for(i=0 ; i<3 ; i=i+1)
+    {
+      for (j=0 ; j<4; j=j+1)
+      printf("%3d\n" , &num2[i][j]);
+      printf("\n");  
+    }
+    
+    printf(" the sum of num1 and num2 are--\n");
+    for(i=0 ; i<3 ; i=i+1)
+    {
+      for (j=0 ; j<4; j=j+1)
+      printf("%3d" , (num1[i][j] + num2[i][j]));
+      printf("\n");
+}
